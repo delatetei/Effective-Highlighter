@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.effective-highlighter-pink {
+  background: linear-gradient(transparent 60%, #ffdfef 0%);
+}
+
+.effective-highlighter-blue {
+  background: linear-gradient(transparent 60%, #dfeaff 0%);
+}

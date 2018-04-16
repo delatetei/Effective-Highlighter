@@ -44,6 +44,16 @@
   }
   endif;
   add_filter('mce_buttons_2','add_styles_to_tinymce_buttons');
+
+  function add_effective_highlighter_editor_style() {
+    add_editor_style(plugins_url('editor-style.css', __FILE__));
+  }
+  add_action('admin_init', 'add_effective_highlighter_editor_style');
+
+  function add_effective_highlighter_style() {
+    wp_enqueue_style('effective_highlighter_style', plugins_url('style.css', __FILE__));
+  }
+  add_action('wp_enqueue_scripts', 'add_effective_highlighter_style');
     
 /* -*- coding: utf-8-unix -*- */
 // vim: et fenc=utf-8 ff=unix sw=2 ts=2 sts=2
