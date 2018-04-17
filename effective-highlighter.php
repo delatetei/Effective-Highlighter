@@ -28,8 +28,8 @@
       add_filter('tiny_mce_before_init', array(&$this, 'initialize_tinymce_styles'), 10000);
       add_filter('mce_buttons_2', array(&$this, 'add_styles_to_tinymce_buttons'));
 
-      add_action('admin_init', array(&$this, 'add_effective_highlighter_editor_style'));
-      add_action('wp_enqueue_scripts', array(&$this, 'add_effective_highlighter_style'));
+      add_action('admin_init', array(&$this, 'add_editor_style'));
+      add_action('wp_enqueue_scripts', array(&$this, 'add_style'));
     }
     
     public function activationHook() {
@@ -71,11 +71,11 @@
       return $buttons;
     }
 
-    public function add_effective_highlighter_editor_style() {
+    public function add_editor_style() {
       add_editor_style(plugins_url('editor-style.css', __FILE__));
     }
 
-    public function add_effective_highlighter_style() {
+    public function add_style() {
       wp_enqueue_style('effective_highlighter_style', plugins_url('style.css', __FILE__));
     }
   }
