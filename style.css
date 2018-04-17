@@ -1,9 +1,29 @@
 @charset "utf-8";
 
+.effective-highlighter-red {
+  background: linear-gradient(transparent 60%, #ffcccc 0%);
+}
+
 .effective-highlighter-pink {
-  background: linear-gradient(transparent 60%, #ffdfef 0%);
+  background: linear-gradient(transparent 60%, #ffd6ff 0%);
+}
+
+.effective-highlighter-orange {
+  background: linear-gradient(transparent 60%, #ffddbc 0%);
+}
+
+.effective-highlighter-purple {
+  background: linear-gradient(transparent 60%, #ead6ff 0%);
 }
 
 .effective-highlighter-blue {
-  background: linear-gradient(transparent 60%, #dfeaff 0%);
+  background: linear-gradient(transparent 60%, #ccffff 0%);
+}
+
+.effective-highlighter-green {
+  background: linear-gradient(transparent 60%, #ccffcc 0%);
+}
+
+.effective-highlighter-yellow {
+  background: linear-gradient(transparent 60%, #ffffa8 0%);
 }

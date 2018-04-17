@@ -47,14 +47,39 @@
           'title' => 'Effective Highlighter',
           'items' => array(
             array(
+              'title' => 'red',
+              'inline' => 'strong',
+              'classes' => 'effective-highlighter-red'
+            ),
+            array(
               'title' => 'pink',
               'inline' => 'strong',
               'classes' => 'effective-highlighter-pink'
             ),
             array(
+              'title' => 'orange',
+              'inline' => 'strong',
+              'classes' => 'effective-highlighter-orange'
+            ),
+            array(
+              'title' => 'purple',
+              'inline' => 'strong',
+              'classes' => 'effective-highlighter-purple'
+            ),
+            array(
               'title' => 'blue',
               'inline' => 'strong',
               'classes' => 'effective-highlighter-blue'
+            ),
+            array(
+              'title' => 'green',
+              'inline' => 'strong',
+              'classes' => 'effective-highlighter-green'
+            ),
+            array(
+              'title' => 'yellow',
+              'inline' => 'strong',
+              'classes' => 'effective-highlighter-yellow'
             ),
           )
         )
